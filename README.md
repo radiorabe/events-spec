@@ -77,9 +77,9 @@ The following attributes MUST follow these constaints in addition to the CloudEv
 - Constraints:
   - SHOULD be a based on the event producers project page.
 - Examples
-  - https://github.com/radiorabe/rabemimimi
-  - https://github.com/LibreTime/libretime#<event-id-for-tracing>
-  - https://github.com/radiorabe/raar_show_descriptor
+  - `https://github.com/radiorabe/rabemimimi`
+  - `https://github.com/LibreTime/libretime#<event-id-for-tracing>`
+  - `https://github.com/radiorabe/raar_show_descriptor`
 
 ### type
 
