@@ -1,8 +1,7 @@
-# RaBe Events Spec
+# RaBe CloudEvents Specification
 
-Specfication for RaBe [CloudEvents](https://cloudevents.io/). Defines `URI`, `URI-reference` types and
-the required `type` attribute of the CloudEvents spec. It uses pseudo-DNS namespacing with the
-`events.api.rabe.ch` domain to achieve most of it's goals.
+The RaBe [CloudEvents](https://cloudevents.io/) specification defines the required, `URI`
+and `URI-reference` based `type` and `source` attributes of the CloudEvents specification.
 
 ## Table of Contents
 
