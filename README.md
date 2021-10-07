@@ -118,8 +118,8 @@ The following example shows a paired down RaBe CloudEvent serialized as JSON:
 
 ```json
 {
-    "type" : "ch.rabe.api.events.rabemimimi.mimimi.created",
-    "source" : "events.api.rabe.ch/rastermimimi"
+    "type" : "ch.rabe.api.events.events-spec.v1.such.event",
+    "source" : "https://github.com/radiorabe/events-spec",
 }
 ```
 
