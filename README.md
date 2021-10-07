@@ -1,7 +1,7 @@
 # RaBe CloudEvents Specification
 
 The RaBe [CloudEvents](https://cloudevents.io/) specification defines the required, `URI`
-and `URI-reference` based `type` and `source` attributes of the CloudEvents specification.
+and `URI-reference` based, `type` and `source` attributes of the CloudEvents specification.
 
 ## Table of Contents
 
@@ -94,10 +94,6 @@ The following attributes MUST follow these constaints in addition to the CloudEv
   The RaBe DNS authority `events.api.rabe.ch` SHALL be used for reverse-DNS
   naming purposes.
  
-  The event producer MUST include a unique identifier. It is RECOMMENDED that
-  the GitHub repo name of the producer is used in the `source` attribute.
-  Systems MAY also use their internal project name for this purpose.
-
   An event producer MAY use a subdomain indicate which component an event
   originated from. Types SHOULD contain versioning information.
 
@@ -118,7 +114,7 @@ The following example shows a paired down RaBe CloudEvent serialized as JSON:
 ```json
 {
     "type" : "ch.rabe.api.events.events-spec.v1.such.event",
-    "source" : "https://github.com/radiorabe/events-spec",
+    "source" : "https://github.com/radiorabe/events-spec"
 }
 ```
 
