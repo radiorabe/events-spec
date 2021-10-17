@@ -9,7 +9,7 @@ and `URI-reference` based, `type` and `source` attributes of the CloudEvents spe
 - [Notations and Terminology](#notations-and-terminology)
 - [Versioning](#versioning)
 - [Type System](#type-system)
-- [Attribute Naming Convention](#attribute-naming-covention)
+- [Attribute Naming Convention](#attribute-naming-convention)
 - [REQUIRED Attributes](#required-attributes)
 - [Example](#example)
 
