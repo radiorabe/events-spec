@@ -53,7 +53,8 @@ This specification defines types from the CloudEvents [Type System](https://gith
 
 All attributes MUST follow the CloudEvents [Naming Convention](https://github.com/cloudevents/spec/blob/v1.0.1/spec.md#attribute-naming-convention).
 
-Any extension attributes defined by this spec SHALL be prefixed with the string `rabe` to reduce the chances of name collisions with extension attributes external to RaBe.
+Any extension attribute defined by this spec SHALL be prefixed with the string `rabe` to reduce the chances
+of name collisions with extension attributes external to RaBe.
 
 ## REQUIRED Attributes
 
