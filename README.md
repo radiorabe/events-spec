@@ -9,6 +9,7 @@ and `URI-reference` based, `type` and `source` attributes of the CloudEvents spe
 - [Notations and Terminology](#notations-and-terminology)
 - [Versioning](#versioning)
 - [Type System](#type-system)
+- [Attribute Naming Convention](#attribute-naming-convention)
 - [REQUIRED Attributes](#required-attributes)
 - [Example](#example)
 
@@ -47,6 +48,13 @@ This specification defines types from the CloudEvents [Type System](https://gith
 - `URI-reference` - Uniform resource identifier reference.
   - String encoding: `URI-reference` as defined in
     [RFC 3986 Section 4.1](https://tools.ietf.org/html/rfc3986#section-4.1).
+
+## Attribute Naming Convention
+
+All attributes MUST follow the CloudEvents [Naming Convention](https://github.com/cloudevents/spec/blob/v1.0.1/spec.md#attribute-naming-convention).
+
+Any extension attribute defined by this spec SHALL be prefixed with the string `rabe` to reduce the chances
+of name collisions with extension attributes external to RaBe.
 
 ## REQUIRED Attributes
 
