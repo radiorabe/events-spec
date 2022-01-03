@@ -140,7 +140,7 @@ This event SHOULD be emitted by audio players. Subscribers MAY use it for a wide
 The `data` field  MUST contain `item.artist` and `item.title`. It SHOULD contain `item.length` which MAY be used to generate internal `ch.rabe.api.events.track.v1.trackFinished` events in case it misses the event from the player or none gets sent. The `data` field MAY contain additional fields based on `nowplaypadgen.dlplus.CONTENT_TYPES`. 
 
 **Example:**
-```
+```json
 {
   "specversion": "1.0",
   "type": "ch.rabe.api.events.track.v1.trackStarted",
