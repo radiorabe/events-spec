@@ -104,7 +104,9 @@ The following attributes MUST follow these constaints in addition to the CloudEv
   naming purposes.
  
   An event producer MAY use a subdomain indicate which component an event
-  originated from. Types SHOULD contain versioning information.
+  originated from. Types SHOULD contain versioning information. They MAY
+  take the [RaBe CloudEvents Event Type Registry](#event-type-registry)
+  into account and are strongly encouraged to do so.
 
 - Constraints:
   - SHOULD be prefixed with a reverse-DNS name.
@@ -114,7 +116,7 @@ The following attributes MUST follow these constaints in addition to the CloudEv
     - ch.rabe.api.events.rabemimimi.v1alpha.mimimi.created
     - ch.rabe.api.events.rabemimimi.v1alpha.mimimi.updated
   - Simple unversioned events:
-    - ch.rabe.api.libretime.onair
+    - ch.rabe.api.events.libretime.onair
 
 ## Example
 
