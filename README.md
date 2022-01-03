@@ -12,7 +12,7 @@ and `URI-reference` based, `type` and `source` attributes of the CloudEvents spe
 - [Attribute Naming Convention](#attribute-naming-convention)
 - [REQUIRED Attributes](#required-attributes)
 - [Example](#example)
-- [Event Type Registry](#event-registry)
+- [Event Type Registry](#event-type-registry)
 
 ## Overview
 
