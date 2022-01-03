@@ -12,6 +12,7 @@ and `URI-reference` based, `type` and `source` attributes of the CloudEvents spe
 - [Attribute Naming Convention](#attribute-naming-convention)
 - [REQUIRED Attributes](#required-attributes)
 - [Example](#example)
+- [Event Type Registry](#event-type-registry)
 
 ## Overview
 
@@ -123,6 +124,31 @@ The following example shows a paired down RaBe CloudEvent serialized as JSON:
 {
     "type" : "ch.rabe.api.events.events-spec.v1.such.event",
     "source" : "https://github.com/radiorabe/events-spec"
+}
+```
+
+## Event Type Registry
+
+This event type registry is non-normative. It SHOULD be taken into consideration when creating new events but it MUST NOT be considered as the authority on RaBe CloudEvents event types. Please register new event types as necessary.
+
+### `ch.rabe.api.events.track.v1.trackStarted`
+
+This event SHOULD be emitted by audio players. Subscribers MAY use it for a wide range of purposes, [nowplaying](https://github.com/radiorabe/nowplaying) might use it for updating the current track from [Klangbecken](https://github.com/radiorabe/klangbecken), but it could also trigger other workflows depending on the source of the track.
+
+**Example:**
+```
+{
+  "specversion": "1.0",
+  "type": "ch.rabe.api.events.track.v1.trackStarted",
+  "source": "https://github.com/radiorabe/klangbecken",
+  "id": "<id>",
+  "time": "2021-12-28T19:31:00Z",
+  "datacontenttype": "application/json",
+  "data": {
+    "item.artist": "hairmare fusion sounds collective",
+    "item.title": "C L O U D E V E N T W A V E",
+    "item.length": 36000
+  }
 }
 ```
 
