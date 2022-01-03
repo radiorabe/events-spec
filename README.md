@@ -135,6 +135,8 @@ This event type registry is non-normative. It SHOULD be taken into consideration
 
 This event SHOULD be emitted by audio players. Subscribers MAY use it for a wide range of purposes, [nowplaying](https://github.com/radiorabe/nowplaying) might use it for updating the current track from [Klangbecken](https://github.com/radiorabe/klangbecken), but it could also trigger other workflows depending on the source of the track.
 
+The `data` field  MUST contain `item.artist` and `item.title`. It SHOULD contain `item.length` which MAY be used to generate internal `ch.rabe.api.events.track.v1.trackFinished` events in case it misses the event from the player or none gets sent. The `data` field MAY contain additional fields based on `nowplaypadgen.dlplus.CONTENT_TYPES`. 
+
 **Example:**
 ```
 {
