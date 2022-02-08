@@ -75,9 +75,9 @@ The following attributes MUST follow these constaints in addition to the CloudEv
 
   It is RECOMMENDED to use the GitHub page of the project as `source`.
 
-  A source MAY assign a unique `source` to each distinct by appending a fragment
-  to the URI. It is RECOMMENDED that the unique part is based on a UUID to aid
-  with tracing efforts or similar requirements.
+  An application MAY assign a unique `source` to each distinct producer by appending
+  a fragment to the URI. It is RECOMMENDED that the unique part is based on a UUID to
+  aid with tracing efforts or similar requirements.
 
   An application MAY use UUID, URN or application-specific schemes to create
   unique `source` identifiers but this is NOT RECOMMENDED.
