@@ -1,6 +1,6 @@
-site_name: event-spec
-repo_url: https://github.com/radiorabe/event-spec
-repo_name: radiorabe/event-spec
+site_name: events-spec
+repo_url: https://github.com/radiorabe/events-spec
+repo_name: radiorabe/events-spec
 
 theme:
   name: "material"
