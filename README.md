@@ -137,7 +137,7 @@ This event type registry is non-normative. It SHOULD be taken into consideration
 
 This event SHOULD be emitted by audio players. Subscribers MAY use it for a wide range of purposes, [nowplaying](https://github.com/radiorabe/nowplaying) might use it for updating the current track from [Klangbecken](https://github.com/radiorabe/klangbecken), but it could also trigger other workflows depending on the source of the track.
 
-The `data` field  MUST contain `item.artist` and `item.title`. It SHOULD contain `item.length` which MAY be used to generate internal `ch.rabe.api.events.track.v1.trackFinished` events in case it misses the event from the player or none gets sent. The `data` field MAY contain additional fields based on `nowplaypadgen.dlplus.CONTENT_TYPES`. 
+The `data` field  MUST contain `item.artist` and `item.title`. If an ISRC is available, it SHALL be included as `descriptor.identifier` in the `data` field. It SHOULD contain `item.length` which MAY be used to generate internal `ch.rabe.api.events.track.v1.trackFinished` events in case it misses the event from the player or none gets sent. The `data` field MAY contain additional fields based on `nowplaypadgen.dlplus.CONTENT_TYPES`.
 
 **Example:**
 ```json
@@ -151,7 +151,8 @@ The `data` field  MUST contain `item.artist` and `item.title`. It SHOULD contain
   "data": {
     "item.artist": "hairmare fusion sounds collective",
     "item.title": "C L O U D E V E N T W A V E",
-    "item.length": 36000
+    "item.length": 36000,
+    "descriptor.identifier": "isrc, if available"
   }
 }
 ```
