@@ -3,10 +3,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: events-spec
-  description: RaBe CloudEvents Specification
+  title: RaBe CloudEvents
+  description: |
+    The RaBe CloudEvents specification defines the required, `URI` and `URI-reference`
+    based, `type` and `source` attributes of the CloudEvents specification.
   annotations:
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: specification
+  type: spec
   lifecycle: experimental
   owner: it-reaktion
